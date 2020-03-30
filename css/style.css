@@ -1,0 +1,22 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+#nameTag {
+    font-size: 1em;
+    text-align: center;
+    background-color: deepskyblue;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+#aboutMe {
+    padding: 10px;
+    color: dodgerblue;
+    border-bottom: 1px solid beige;
+}
+
+main {
+    background-color: floralwhite;
+}
