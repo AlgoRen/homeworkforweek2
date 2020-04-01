@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 } */
+img {
+    width: 100%;
+}
 
 #nameTag {
     font-size: 1em;
@@ -10,6 +13,9 @@
     padding: 10px;
     margin-bottom: 0;
 }
+#myPic {
+    height: 50%;
+}
 
 #aboutMe, #contact, #portfolio {
     padding: 10px;
@@ -17,10 +23,11 @@
     border-bottom: 1px solid beige;
 }
 
+.navbar {
+    position: sticky;
+}
+
 main {
     background-color: floralwhite;
 }
 
-.navbar {
-    position: sticky;
-}
