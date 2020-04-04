@@ -20,8 +20,8 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -40,20 +40,31 @@
             <h2 id="aboutMe" class="col-12"> About Me </h2>
           </section>
           <section class="row">
-            <img id="myPic" src="images/2020-03-31.png" alt="Black clothes in nature" class="col-md-4 card-img-top">
+            <article class="col-md-4">
+              <img id="myPic" src="images/2020-03-31.png" alt="Black clothes in nature" class="card-img-top">
+              <p class="p-2">
+                Hi, I'm Jerome, artist name Ren, and I love to be creative. I love to skate. I'm 23 years old. 
+                I look forward to meeting other creatives like myself. "This is where the fun begins." -Anakin Skywalker
+              </p>
+            </article>
             <div class="card col-md-8">
               <h5 class="card-title">Jerome Aka Ren</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero esse, enim architecto exercitationem, ea obcaecati suscipit fugit quo excepturi totam sed, illo ad similique dolor! Nesciunt vitae rem veniam repellat!</p>
-
-            <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Forever Learning</button>
-            <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Forever Listening</button>
-            <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Forever Doing</button>
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <p class="card-text">What does a poet, writer, performer, artist, and dreamer say about they're own self? 
+                I simply love to do the things that I love to do and everyday I wakeup and I try as best as humanly possibly to not
+                be ungrateful of all that happens. It is best to love and I am starting to love web. Care to see what my love is all about?
+              </p>
+            <section id="buttonSection" class="row">
+              <button type="button" class="btn btn-primary col-md-4 mt-2 mr-2" data-toggle="modal" data-target="#learningModal" data-whatever="@mdo">Forever Learning</button>
+              <button type="button" class="btn btn-primary col-md-4 mt-2 mr-2" data-toggle="modal" data-target="#listeningModal" data-whatever="@fat">Forever Listening</button>
+              <button type="button" class="btn btn-primary col-md-4 mt-2 mr-2" data-toggle="modal" data-target="#doingModal" data-whatever="@getbootstrap">Forever Doing</button>
+            </section>
+            
+            <!-- Learning Modal Starts Here -->
+            <div class="modal fade" id="learningModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <h5 id="learningModal">Forever Learning</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -61,43 +72,111 @@
                   <div class="modal-body">
                     <form>
                       <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                        <input type="text" class="form-control" id="recipient-name">
+                        <h3>Things I am actively learning</h3>
+                        <p>JavaScript, UI/UX Design, German, The LEAN Startup technique, and writing with more vigore.</p>
                       </div>
                       <div class="form-group">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
+                        <h3>Things I am passively learning</h3>
+                        <p>Dveloping a strong attention span, reading skills, typing skills, communication skills, 
+                          poetry, Photoshop Professionalism, and project management.</p>
                       </div>
                     </form>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send message</button>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- Learning Modal Ends Here -->
+            <!-- Listening Modal Starts Here -->
+            <div class="modal fade" id="listeningModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 id="listeningModal">Forever Listening</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <h3>Musical Superheros</h3>
+                        <p>Mac Miller, Kid Cudi, Lil Wayne, Mozart, Hollywood Undead, and Rihanna.</p>
+                      </div>
+                      <div class="form-group">
+                        <h3>Current favorite song</h3>
+                        <p>Passionfruit by Yaeji</p>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Listening Modal Ends Here -->
+            <!-- Doing Modal Starts Here -->
+            <div class="modal fade" id="doingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 id="learningModal">Forever Doing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <h3>Things I love to do</h3>
+                        <p>Make music, skateboard, graphic desinging, watch movies from 2001 and earlier.</p>
+                      </div>
+                      <div class="form-group">
+                        <h3>Things I would like to do</h3>
+                        <p>Snowboard, treflip, and find local talent for my startup.</p>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Doing Modal Ends Here -->
             <section id="memorial" class="row mt-2">
               <div id="mac" class="homeImages col-md-4">
                 <img src="images/mac pic.png">
                 <p>Mac Miller</p>
-                <p>[Quote here]</p>
+                <p>Sound of silence as they all just watch you,
+                  I kinda find it strange,
+                  How the times have changed</p>
               </div>
               <div id="jah" class="homeImages col-md-4">
                 <img src="images/x pic.jpg">
                 <p>XXXTENTACION</p>
-                <p>[Quote here]</p>
+                <p>Who am I? Someone that's afraid to let go, uh
+                  You decide, if you're ever gonna, let me know (yeah)</p>
               </div>
               <div id="gus" class="homeImages col-md-4">
                 <img src="images/peep pic.jpg">
                 <p>Lil Peep</p>
-                <p>[Quote here]</p>
+                <p>I know that you want me, you know that I want you
+                  The memories haunt me, I know that they haunt you too
+                  But it's alright, you'll be fine
+                  Baby, it's alright, you'll be fine</p>
               </div>
               <div id="memorialTitle" class="col-12">
                 <h3>Love for the writers who've stepped out of time.</h3>
               </div>
             </section>
             </div>
+          </section>
+          <section class="row">
+              <h3>Hi maybe put footer here?</h3>
           </section>
       </main>
 </body>

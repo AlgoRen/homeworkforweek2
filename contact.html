@@ -19,8 +19,8 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -36,8 +36,34 @@
       <main class="container">
         <section class="row">
           <h2 id="contact" class="col-12"> Contact me via </h2>
-          <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi blanditiis laudantium sed, cupiditate facilis, reprehenderit nulla sint natus, atque necessitatibus error doloremque labore! Alias facere possimus corrupti expedita? Obcaecati, reiciendis?</div>
-          <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero esse, enim architecto exercitationem, ea obcaecati suscipit fugit quo excepturi totam sed, illo ad similique dolor! Nesciunt vitae rem veniam repellat!</p>
+          <div class="col-md-8">
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Name</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput2">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Which topic would you like to discuss?</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Website Development</option>
+                    <option>UI/UX Design</option>
+                    <option>Graphic Design</option>
+                    <option>Project Support</option>
+                    <option>GitHub Questions</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Example textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn btn-success mb-2">Submit</button>
+              </form>
+            </div>
+          <div class="col-md-4"></p>
         </section>
     </main>
 </body>
