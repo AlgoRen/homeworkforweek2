@@ -59,6 +59,21 @@ main {
     background-color: floralwhite;
 }
 
+#comicStrip {
+    height: 20vh;
+    width: 100%;
+}
+
+#comicStripContainer {
+    height: 20vh;
+    padding: 0;
+}
+
+#footer {
+    color: blanchedalmond;
+    text-align: center;
+    background-color: black;
+}
 
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
