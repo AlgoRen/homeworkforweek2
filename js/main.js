@@ -2,11 +2,23 @@
 var body = $("body")
 var main = $("main")
 var footer = $("#footer")
-body.on("click", function () {
-  alert("Taco salad")
-})
+var campfire = $("#campfire")
+var comicStrip = $("#comicStrip")
 
-
+/* Setting up API call for campfire gif */
+var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=a4rgsp8IvrOZPoatgW1PG4MWsZ10Saur&q=campfire&limit=25&offset=0&rating=PG-13&lang=en";
+$(document).ready(function(){
+    $.ajax({
+    url: queryURL,
+    method: "GET"
+    }).then(function(response) {
+    var img = $("<img>");
+    console.log(response)
+    img.attr("src", response.data[0].images.original.url)
+    $(campfire).append(img);
+    });
+});
+/* Bootstrap Modal Code */
 $('#exampleModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient = button.data('whatever') // Extract info from data-* attributes
@@ -16,3 +28,16 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   modal.find('.modal-title').text('New message to ' + recipient)
   modal.find('.modal-body input').val(recipient)
 })
+
+/* Creating an add portfolio item section*/
+var portfolioArr = ["One", "Two", "Three", "Four"] //Using array to cycle through and
+// create new divs with specific id tags.
+
+var portfolioDiv = $("<div>").attr("class", "col-first portfolio").text("Yeah! 1");
+var portfolioAddDiv = $("<div>").attr("class", "col-6 portfolio").text("Added Div");
+$("#portfolioContainer").children("section#portRowOne").prepend(portfolioDiv);
+$("#addPortProj").on("click", function(){
+  $("#portfolioContainer").children("section#portRowOne").prepend(portfolioAddDiv)
+})
+
+
